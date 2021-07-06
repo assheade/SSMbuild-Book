@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="ssmbuild@localhost">
+  <database-model serializer="dbm" dbms="UNKNOWN" family-id="UNKNOWN" format-version="4.20">
+    <root id="1">
+      <ServerVersion>0.0</ServerVersion>
+      <DefaultCasing>lower/lower</DefaultCasing>
+    </root>
+    <database id="2" parent="1" name="a"/>
+    <database id="3" parent="1" name="books"/>
+    <database id="4" parent="1" name="information_schema"/>
+    <database id="5" parent="1" name="library"/>
+    <database id="6" parent="1" name="librarymanagement"/>
+    <database id="7" parent="1" name="mydb"/>
+    <database id="8" parent="1" name="mysql"/>
+    <database id="9" parent="1" name="mywork"/>
+    <database id="10" parent="1" name="school"/>
+    <database id="11" parent="1" name="ssm-curd"/>
+    <database id="12" parent="1" name="ssmbuild">
+      <Current>1</Current>
+    </database>
+    <database id="13" parent="1" name="sys"/>
+    <database id="14" parent="1" name="tbstudent"/>
+    <database id="15" parent="1" name="xkg"/>
+    <database id="16" parent="1" name="xkgl"/>
+    <schema id="17" parent="12">
+      <Current>1</Current>
+    </schema>
+    <table id="18" parent="17" name="books"/>
+    <column id="19" parent="18" name="bookID">
+      <Position>1</Position>
+      <Comment>书id</Comment>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="20" parent="18" name="bookName">
+      <Position>2</Position>
+      <Comment>书名</Comment>
+      <DataType>VARCHAR(100)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="21" parent="18" name="bookCounts">
+      <Position>3</Position>
+      <Comment>数量</Comment>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="22" parent="18" name="detail">
+      <Position>4</Position>
+      <Comment>描述</Comment>
+      <DataType>VARCHAR(200)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="23" parent="18" name="bookID">
+      <ColNames>bookID</ColNames>
+    </index>
+  </database-model>
+</dataSource>
